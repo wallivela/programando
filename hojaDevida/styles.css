@@ -1,0 +1,50 @@
+.body{
+  background-color: black;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 40px;
+}
+
+.photo {
+  flex: 0 0 auto;
+  width: 120px;
+  margin-right: 30px;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+}
+
+.personal-info {
+  flex: 1 1 auto;
+}
+
+h1, h2, h3 {
+  color: #333;
+  font-family:fantasy;
+}
+
+section {
+  margin-bottom: 30px;
+  background-color: aqua;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+p {
+  margin: 5px 0;
+}
