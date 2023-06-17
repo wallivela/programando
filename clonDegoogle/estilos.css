@@ -1,57 +1,81 @@
-*{
+* {
   padding: 0;
-  margin:0;
+  margin: 0;
   box-sizing: border-box;
 }
-.box{
-  display: flex;
-  justify-content: flex-start;
-  width: 100vw;
+body {
+  background-color: ;
   height: 100vh;
-  }
-  
-.boxing{
-  background-color: transparent;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header {
+  display: flex;
+  flex-direction: row;
   justify-content: flex-end;
+  background-color: transparent;
+  gap: 15px;
+  height: 30px;
   align-items: center;
-  width: 100%;
-  height: 10%;
 }
 
-.box1{
-  font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
-  font-size: 81.25%;
-  background-color: transparent;
-  width: 5%;
-  height: 90%;
-  text-align: center;
-  font-size: 80%;
+a {
+  text-decoration: none;
+  color: aqua;
 }
-.box2{
-  font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
-  font-size: 81.25%;
-  background-color: transparent;
-  width: 5%;
-  height: 90%;
-  text-align: center;
-  font-size: 80%;
+
+main {
+  display: flex;
+  background-image: url();
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  height: 100%;
+  align-items: center;
 }
-.box3{
-  background-color: transparent;
-  margin-left: 1%;
-  width: 5%;
-  height: 80%;
+
+
+.baul {
+  display: flex;
+  align-items: center;
+  background-color: #e7f611;
+  border-radius: 20px;
+  padding: 5px;
 }
-.box4{
-  background-color: transparent;
-  width: 5%;
-  height: 70%;
+.baul.baul:hover{
+  content: '\F1205';
 }
-.imgRedonda {
-  width:50px;
-  height: 50px;
-  border-radius:150px;
-  margin-right: 1%;
-  margin-left: 1%;
+
+.baul input {
+  border: none;
+  outline: none;
+  width: 400px;
+  padding: 5px;
+}
+
+.baul button {
+  background-color: #4b29a1;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.iconos {
+  display: flex;
+}
+
+.iconos div {
+  width: 40px;
+  height: 40px;
+  background-color: #f2f2f2;
+  margin-left: 5px;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(255, 238, 0);
+  height: 40px;
 }
