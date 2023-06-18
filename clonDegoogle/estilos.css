@@ -10,6 +10,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
 header {
   display: flex;
   flex-direction: row;
@@ -30,32 +31,42 @@ main {
   background-image: url();
   flex-direction: column;
   justify-content: center;
-  gap: 15px;
+  gap: 40px;
   height: 100%;
   align-items: center;
 }
 
+.baul input {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  width: 500px;
+  height: 45px;
+  margin-left: 10px;
+  border-bottom: transparent;
+  border-color: transparent;
+}
+.baul.baul:hover {
+  content: "\F1205";
+}
 
 .baul {
   display: flex;
   align-items: center;
-  background-color: #e7f611;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 5px;
-}
-.baul.baul:hover{
-  content: '\F1205';
-}
-
-.baul input {
-  border: none;
   outline: none;
-  width: 400px;
+  width: 600px;
+  height: 50px;
   padding: 5px;
+  background-color: whitesmoke;
+  border-color: black;
+}
+.lupa {
+  width: 20px;
 }
 
 .baul button {
-  background-color: #4b29a1;
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
@@ -65,15 +76,30 @@ main {
 
 .iconos {
   display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  height: 20px;
 }
 
 .iconos div {
-  width: 40px;
-  height: 40px;
-  background-color: #f2f2f2;
-  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 50px;
+  height: 35px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
 }
 
+.iconos button {
+  display: flex;
+  align-items: center;
+  width: 135px;
+  height: 38px;
+  border-color: white;
+}
 footer {
   display: flex;
   background-color: rgb(255, 238, 0);
