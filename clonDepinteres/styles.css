@@ -1,4 +1,9 @@
 /* Profe lautaro no me dan las berracas imagnes */
+* {
+  padding: 0;
+  margin: 10;
+  box-sizing: border-box;
+}
 header {
   display: flex;
   align-items: center;
@@ -66,7 +71,9 @@ nav ul li a:hover {
 .grid-item {
   position: relative;
   overflow: hidden;
-  height: 200px; /* Altura fija de las cajas */
+  height: 200px;
+  border-radius: 8px;
+  /* Altura fija de las cajas */
 }
 
 .grid-item img {
