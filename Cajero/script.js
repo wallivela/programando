@@ -1,15 +1,40 @@
-const loginForm = document.getElementById('login-form');
-//contante
-loginForm.addEventListener('submit', function(event) {
+const loginForm = document.getElementById("login-form");
+
+const cuentas = [
+  {
+    usuario: "Persona 1",
+    clave: "Mali",
+    saldo: 200,
+  },
+
+  {
+    usuario: "Persona 2",
+    clave: "Gera",
+    saldo: 290,
+  },
+
+  {
+    usuario: "Persona 3",
+    clave: "Maui",
+    saldo: 67,
+  },
+];
+
+loginForm.addEventListener("submit", function (event) {
   event.preventDefault();
-//logearse
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
-//co para dar ingreso
-  if (username === 'admin' && password === '123456') {
+  //logearse
+  var usuario = document.getElementById("usuario").value;
+  var clave = document.getElementById("clave").value;
+  var recorrer = cuentas.find(
+  (value) => value.usuario === usuario && value.clave === clave);
+
+
+  //co para dar ingreso
+  if (recorrer) {
     // Inicio de sesión exitoso
-    window.location.href = 'transacciones.html';
+    localStorage.setItem(recorrer, JSON.stringify(recorrer));
+    window.location.href = "transacciones.html";
   } else {
-    alert('Credenciales inválidas. Por favor, inténtalo nuevamente.');
+    alert("Credenciales inválidas. Por favor, inténtalo nuevamente.");
   }
 });
