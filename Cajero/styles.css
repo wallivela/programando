@@ -6,3 +6,71 @@
 #main-box {
   margin-top: 50px;
 }
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+
+.btn-primary {
+  background-color: #0070c0;
+  border-color: #0070c0;
+}
+
+.btn-primary:hover {
+  background-color: #005da0;
+  border-color: #005da0;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 112, 192, 0.5);
+}
+
+/* Estilo para el saldo actual */
+#saldoActualEl {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container-fluid {
+  background-color: #343a40; /* Fondo oscuro */
+  animation: gradientAnimation 5s ease infinite alternate;
+}
+
+.main-box {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.main-box:hover {
+  transform: scale(1.1);
+  background-color: #212529;
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
