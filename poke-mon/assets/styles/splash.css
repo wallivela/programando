@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .splash-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: bounce 3s infinite;
+    z-index: 9999;
+  }
+  
+  .splash-image {
+    max-width: 30%;
+    height: auto;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(20);
+    }
+    25% {
+      transform: translateY(-20%);
+    }
+    50% {
+      transform: translateY(40%);
+    }
+    75% {
+      transform: translateY(-20%);
+    }
+  }
+
+  
