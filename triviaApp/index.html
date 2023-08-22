@@ -4,13 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/styles.css">
-  <script type="module" src="./aPi/main.js"></script>
   <title>Trivia App</title>
 </head>
 <body>
   <h1>Trivia App</h1>
-  <div id="root">aqui deberia salir</div>
+  <div>
+    <label for="categoria">Categoría:</label>
+    <select id="categoria"></select>
+  </div>
+  <div>
+    <label for="dificultad">Dificultad:</label>
+    <select id="dificultad">
+      <option value="easy">Fácil</option>
+      <option value="medium">Mediana</option>
+      <option value="hard">Difícil</option>
+    </select>
+  </div>
+  <div>
+    <label for="tipo">Tipo de Respuesta:</label>
+    <select id="tipo">
+      <option value="multiple">Múltiple</option>
+      <option value="boolean">Verdadero/Falso</option>
+    </select>
+  </div>
+  <button id="crearTrivia">Crear Trivia</button>
+  <div id="triviaContainer"></div>
+  <div id="resultadoContainer"></div>
+  <script type="module" src="./aPi/main.js"></script>
 </body>
 </html>
-
-

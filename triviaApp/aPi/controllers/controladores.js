@@ -1,9 +1,5 @@
-
-
-export async function buscarTrivia() {
-    let data = await fetch("https://opentdb.com/api.php?amount=30");
-    let dataParceda = await data.json();
-    return dataParceda.results;
-  }
-  
-buscarTrivia()
+export async function fetchTriviaQuestions(categoria, dificultad, tipo) {
+  const response = await fetch(`https://opentdb.com/api.php?amount=10&category=${categoria}&difficulty=${dificultad}&type=${tipo}`);
+  const data = await response.json();
+  return data.results;
+}
